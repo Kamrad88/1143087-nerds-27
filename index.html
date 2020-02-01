@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-    <title>HTML Academy: Нёрдс</title>
-  </head>
 
-  <body>ы
-    <header class="header">
-      <div class="container">
-        <nav class="header_nav">
-          <span class="logo">
-            <img src="https://via.placeholder.com/150x100" alt="" />
-          </span>
-          <ul>
-            <li><a href="#"></a>Студия</li>
-            <li><a href="#"></a>Клиенты</li>
-            <li><a href="catalog.html"></a>Магазин</li>
-            <li><a href="#"></a>Контакты</li>
-            <li><a href="#"></a>Корзина</li>
-          </ul>
-        </nav>
-        <h1 class="header_title">Веб-студия "Нёрдс"</h1>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <title>HTML Academy: Нёрдс</title>
+</head>
 
-    <div class="main">
-      <h2>Услуги</h2>
-      <section>
-        <ul class="services">
-          <li>
-            <h3>ВЕБ-САЙТЫ</h3>
-            <p>Мир не будет прежним после того как увидит наш сайт!</p>
-            <button>Заказать</button>
-          </li>
-
-          <li>
-            <h3>ПРИЛОЖЕНИЕ</h3>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <button>Заказать</button>
-          </li>
-
-          <li>
-            <h3>ПРЕЗЕНТАЦИИ</h3>
-            <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
-            <button>Заказать</button>
-          </li>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header_nav">
+        <span class="logo">
+          <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс">
+        </span>
+        <ul>
+          <li><a href="#"></a>Студия</li>
+          <li><a href="#"></a>Клиенты</li>
+          <li><a href="catalog.html"></a>Магазин</li>
+          <li><a href="#"></a>Контакты</li>
+          <li><a href="#"></a>Корзина</li>
         </ul>
-      </section>
+      </nav>
+      <h1 class="visually-hidden">Веб-студия "Нёрдс"</h1>
     </div>
+  </header>
 
-    <footer>
-      <ul>
-        <li><a href=""></a>Вконтакте</li>
-        <li><a href=""></a>Фейсбук</li>
-        <li><a href=""></a>Инстаграм</li>
-      </ul>
+  <div class="main">
+    <h2 class="visually-hidden">Услуги</h2>
 
-      <div>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </footer>
-  </body>
+    <ul class="services">
+      <li>
+        <h3>ВЕБ-САЙТЫ</h3>
+        <p>Мир не будет прежним после того как увидит наш сайт!</p>
+        <button>Заказать</button>
+      </li>
+
+      <li>
+        <h3>ПРИЛОЖЕНИЕ</h3>
+        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+        <button>Заказать</button>
+      </li>
+
+      <li>
+        <h3>ПРЕЗЕНТАЦИИ</h3>
+        <p>Вы даже не подозреваете, на сколько вы изумительны!</p>
+        <button>Заказать</button>
+      </li>
+    </ul>
+  </div>
+
+  <footer>
+    <ul>
+      <li><a href=""></a>Вконтакте</li>
+      <li><a href=""></a>Фейсбук</li>
+      <li><a href=""></a>Инстаграм</li>
+    </ul>
+
+    <div>
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+
+  <div>
+    <section>
+      <h2>Напишите нам</h2>
+
+      
+
+      <form action="#" method="post">
+
+        <p><label for="name-family">Ваше имя:</label>
+          <input type="text" name="name-family" id="name-family" placeholder="Имя Фамилия">
+        </p>
+
+        <p><label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="user-email" placeholder="email@exemple.com">
+        </p>
+
+        <p>Текст письма:
+          <textarea id="message" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button type="submit">Отправить</button>
+
+        <button type="button" title="Закрыть">Закрыть</button>
+
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
