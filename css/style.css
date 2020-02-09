@@ -9,12 +9,11 @@ body {
   background-color: #ffffff;
 }
 
-a{
-text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 nav a {
-  
   color: black;
 }
 
@@ -46,18 +45,33 @@ nav a:focus {
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
+  border: none;
 }
 
-.service-sites{
-    background-color: #efc84a;
+.service-sites {
+  background-color: #fb565a;
 }
 
-.service-apps{
-    background-color: #fb565a;
+.service-sites:hover,
+.service-sites:focus {
+  background-color: #e74246;
 }
 
-.service-presentations{
-    background-color: #00ca74;
+.service-apps {
+  background-color: #00ca74;
+}
+
+.service-apps:hover,
+.service-apps:focus {
+  background-color: #00bc6c;
+}
+
+.service-presentations {
+  background-color: #efc84a;
+}
+.service-presentations:hover,
+.service-presentations:focus {
+  background-color: #eab534;
 }
 
 .services h3 {
@@ -73,15 +87,29 @@ nav a:focus {
   line-height: 24px;
 }
 
-footer div{
-    text-align: center;
+footer div {
+  text-align: center;
 }
 
-footer img{
-    background-image: url(Shape_2_copy_5.png);
+footer img {
+  background-image: url(Shape_2_copy_5.png);
 }
 
 footer img:hover,
 footer img:focus {
-    background-color: #e74246;
+  background-color: #e74246;
+}
+
+.header_store {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+}
+
+
+.button {
+width: 260px;
+height: 50px;
+background-color: #eeeeee;
 }
