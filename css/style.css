@@ -9,13 +9,14 @@ body {
   background-color: #ffffff;
 }
 
-a {
+.menu_item a {
   text-decoration: none;
-}
-
-nav a {
   color: black;
 }
+
+/* nav a {
+  
+} */
 
 .header_nav {
   font-size: 16px;
@@ -26,12 +27,23 @@ nav a {
   text-transform: uppercase;
 }
 
-li {
+/* li {
+  list-style: none;
+} */
+
+.services li {
   list-style: none;
 }
 
-nav a:hover,
-nav a:focus {
+.catalog_item,
+.menu_item,
+.footer_item,
+.nav_item {
+  list-style: none;
+}
+
+.header_nav a:hover,
+.header_nav a:focus {
   color: #fb565a;
 }
 
@@ -91,25 +103,55 @@ footer div {
   text-align: center;
 }
 
-footer img {
+.footer_item a {
+  text-decoration: none;
+}
+
+.footer_item img:hover,
+.footer_item img:focus {
+  background-color: #e74246;
+}
+
+/* footer img {
   background-image: url(Shape_2_copy_5.png);
 }
 
 footer img:hover,
 footer img:focus {
   background-color: #e74246;
-}
+} */
 
-.header_store {
+.header_title {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
   text-align: center;
 }
 
-
 .button {
-width: 260px;
-height: 50px;
-background-color: #eeeeee;
+  border: none;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
 }
+/* -------СЕТКИ------- */
+
+.conainer {
+  margin: 0 auto;
+}
+
+.header {
+  height: 545px;
+}
+
+/* 
+.header_nav {
+  display: flex;
+  
+}
+
+.menu{
+  display: flex;
+  justify-content: space-evenly;
+} */
+

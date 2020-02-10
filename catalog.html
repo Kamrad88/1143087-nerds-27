@@ -1,217 +1,191 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>HTML Academy: Нёрдс</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="header_nav">
-          <a href="index.html" class="logo">
-            <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс" />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic"
+    rel="stylesheet" />
+  <title>HTML Academy: Нёрдс</title>
+</head>
 
-          <ul>
-            <li><a href="#"></a>Студия</li>
-            <li><a href="#"></a>Клиенты</li>
-            <li><a href="catalog.html"></a>Магазин</li>
-            <li><a href="#"></a>Контакты</li>
-            <li><a href="#"></a>Корзина</li>
-          </ul>
-        </nav>
-        <h1 class="header_store">Магазин готовых шаблонов</h1>
-      </div>
-    </header>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header_nav">
+        <a href="index.html" class="logo">
+          <img src="img/nerds-logo.svg" width="100" height="50" alt="Нёрдс" />
+        </a>
 
-    <div class="catalog">
-      <div class="container">
-        <aside class="catalog_filter">
-          <form action="#" method="GET">
-            <fieldset>
-              <h2>СЕТКА:</h2>
+        <ul class="menu">
+          <li class="menu_item"><a href="#"></a>Студия</li>
+          <li class="menu_item"><a href="#"></a>Клиенты</li>
+          <li class="menu_item"><a href="catalog.html"></a>Магазин</li>
+          <li class="menu_item"><a href="#"></a>Контакты</li>
+          <li class="menu_item"><a href="#"></a>Корзина</li>
+        </ul>
+      </nav>
+      <h1 class="header_title">Магазин готовых шаблонов</h1>
+    </div>
+  </header>
 
-              <input type="radio" name="radio-1" value="1" id="radio-1" />
-              <label for="radio-1">Адаптивная</label>
+  <div class="catalog">
+    <div class="container">
+      <aside class="catalog_filter">
+        <form action="#" method="GET">
+          <fieldset>
+            <h2>СЕТКА:</h2>
+            <div class="radio">
 
-              <input type="radio" name="radio-2" value="2" id="radio-2" />
-              <label for="radio-2">Фиксированная</label>
+              <input class="radio_input" type="radio" name="radio" value="1" id="radio-1" />
+              <label class="radio_label" for="radio-1">Адаптивная</label>
 
-              <input type="radio" name="radio-3" value="3" id="radio-3" />
-              <label for="radio-3">Резиновая</label>
-            </fieldset>
+              <input class="radio_input" type="radio" name="radio" value="2" id="radio-2" />
+              <label class="radio_label" for="radio-2">Фиксированная</label>
 
-            <fieldset>
-              <h2>ОСБЕННОСТИ:</h2>
-              <input
-                type="checkbox"
-                name="checkbox-1"
-                value="1"
-                id="checkbox-1"
-              />
-              <label for="checkbox-1">Слайдер</label>
+              <input class="radio_input" type="radio" name="radio" value="3" id="radio-3" />
+              <label class="radio_label" for="radio-3">Резиновая</label>
+            </div>
+          </fieldset>
 
-              <input
-                type="checkbox"
-                name="checkbox-2"
-                value="2"
-                id="checkbox-2"
-              />
-              <label for="checkbox-2">Блок преимуществ</label>
+          <fieldset>
+            <h2>ОСБЕННОСТИ:</h2>
+            <div class="checkbox">
 
-              <input type="checkbox" name="3" value="3" id="checkbox-3" />
-              <label for="checkbox-3">Новости</label>
 
-              <input
-                type="checkbox"
-                name="checkbox-4"
-                value="4"
-                id="checkbox-4"
-              />
-              <label for="checkbox-4">Галерея</label>
+              <input class="checkbox_input" type="checkbox" name="checkbox" value="1" id="checkbox-1" />
+              <label class="checkbox_label" for="checkbox-1">Слайдер</label>
 
-              <input type="checkbox" name="5" value="5" id="checkbox-5" />
-              <label for="checkbox-5">Корзина</label>
-            </fieldset>
+              <input class="checkbox_input" type="checkbox" name="checkbox" value="2" id="checkbox-2" />
+              <label class="checkbox_label" for="checkbox-2">Блок преимуществ</label>
 
-            <button class="button">Показать</button>
-          </form>
-        </aside>
+              <input class="checkbox_input" type="checkbox" name="checkbox" value="3" id="checkbox-3" />
+              <label class="checkbox_label" for="checkbox-3">Новости</label>
 
-        <div class="catalog_content">
-          <ul class="catalog_sort">
-            <!-- Тут будет сортировка каталога  -->
-          </ul>
-          <main class="catalog_list">
-            <ul>
-              <li>
-                <img src="img/img-sedona.jpg" alt="Шаблон Седона" />
-                <div>
-                  <h3>Sedona</h3>
+              <input class="checkbox_input" type="checkbox" name="checkbox" value="4" id="checkbox-4" />
+              <label class="checkbox_label" for="checkbox-4">Галерея</label>
 
-                  <!-- <p>Информационный сайт для туристов</p>
+              <input class="checkbox_input" type="checkbox" name="checkbox" value="5" id="checkbox-5" />
+              <label class="checkbox_label" for="checkbox-5">Корзина</label>
+            </div>
+          </fieldset>
+
+          <button class="button">Показать</button>
+        </form>
+      </aside>
+
+      <div class="catalog_content">
+        <ul class="catalog_sort">
+          <!-- Тут будет сортировка каталога  -->
+        </ul>
+        <main class="catalog_list">
+          <ul class="main">
+            <li class="main_item">
+              <img src="img/img-sedona.jpg" alt="Шаблон Седона" />
+              <div>
+                <h3>Sedona</h3>
+
+                <!-- <p>Информационный сайт для туристов</p>
           <a href="#">9900</a> -->
-                </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <img src="img/img-pink.jpg" alt="Шаблон Pink" />
-                <div>
-                  <h3>Pink</h3>
-                  <!-- <p>сайт</p> -->
-                  <!-- <a href="#"></a> -->
-                </div>
-              </li>
+            <li class="catalog_item">
+              <img src="img/img-pink.jpg" alt="Шаблон Pink" />
+              <div>
+                <h3>Pink</h3>
+                <!-- <p>сайт</p> -->
+                <!-- <a href="#"></a> -->
+              </div>
+            </li>
 
-              <li>
-                <img
-                  src="img/img-barbershop.jpg"
-                  alt="Шаблон Барбершоп Бородинский"
-                />
-                <div>
-                  <h3>Barbershop Borodinsky</h3>
-                  <!-- <p>сайт</p>
+            <li class="catalog_item">
+              <img src="img/img-barbershop.jpg" alt="Шаблон Барбершоп Бородинский" />
+              <div>
+                <h3>Barbershop Borodinsky</h3>
+                <!-- <p>сайт</p>
             <a href="#"></a>  -->
-                </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <img src="img/img-mishka.jpg" alt="Шаблон Мишка" />
-                <div>
-                  <h3>Mishka</h3>
-                  <!-- <p>сайт</p>
+            <li class="catalog_item">
+              <img src="img/img-mishka.jpg" alt="Шаблон Мишка" />
+              <div>
+                <h3>Mishka</h3>
+                <!-- <p>сайт</p>
             <a href="#"></a> -->
-                </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <img src="img/img-aplus.jpg" alt="Шаблон А Плюс" />
-                <div>
-                  <h3>A+</h3>
-                  <!-- <p>сайт</p>
+            <li class="catalog_item">
+              <img src="img/img-aplus.jpg" alt="Шаблон А Плюс" />
+              <div>
+                <h3>A+</h3>
+                <!-- <p>сайт</p>
             <a href="#"></a> -->
-                </div>
-              </li>
+              </div>
+            </li>
 
-              <li>
-                <img src="img/img-kvast.jpg" alt="Шаблон Кваст" />
-                <div>
-                  <h3>Кваст</h3>
-                  <!-- <p
+            <li class="catalog_item">
+              <img src="img/img-kvast.jpg" alt="Шаблон Кваст" />
+              <div>
+                <h3>Кваст</h3>
+                <!-- <p
                 >сайт</p>
             <a href="#"></a> -->
-                </div>
-              </li>
-            </ul>
-          </main>
-        </div>
+              </div>
+            </li>
+          </ul>
+        </main>
       </div>
     </div>
+  </div>
 
-    <footer>
-      <ul>
-        <li>
-          <a href="#"><img src="vk-icon.svg"/></a>Вконтакте
-        </li>
-        <li>
-          <a href="#"><img src="fb-icon.svg"/></a>Фейсбук
-        </li>
-        <li>
-          <a href="#"><img src="insta-icon.svg"/></a>Инстаграм
-        </li>
-      </ul>
-
-      <div>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
-    </footer>
+  <footer>
+    <ul>
+      <li class="footer_item">
+        <a href="#"><img src="vk-icon.svg" alt="" /></a>Вконтакте
+      </li>
+      <li class="footer_item">
+        <a href="#"><img src="fb-icon.svg" alt="" /></a>Фейсбук
+      </li>
+      <li class="footer_item">
+        <a href="#"><img src="insta-icon.svg" alt="" /></a>Инстаграм
+      </li>
+    </ul>
 
     <div>
-      <section>
-        <h2>Напишите нам</h2>
-
-        <form action="#" method="post">
-          <p>
-            <label for="name-family">Ваше имя:</label>
-            <input
-              type="text"
-              name="name-family"
-              id="name-family"
-              placeholder="Имя Фамилия"
-            />
-          </p>
-
-          <p>
-            <label for="user-email">Ваш e-mail:</label>
-            <input
-              type="email"
-              name="email"
-              id="user-email"
-              placeholder="email@exemple.com"
-            />
-          </p>
-
-          <p>
-            Текст письма:
-            <textarea
-              id="message"
-              rows="4"
-              placeholder="В свободной форме"
-            ></textarea>
-          </p>
-
-          <button type="submit">Отправить</button>
-
-          <button type="button" title="Закрыть">Закрыть</button>
-        </form>
-      </section>
+      <b>Давайте дружить, это выгодно!</b>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
-  </body>
+  </footer>
+
+  <div>
+    <section>
+      <h2>Напишите нам</h2>
+
+      <form action="#" method="post">
+        <p>
+          <label for="name-family">Ваше имя:</label>
+          <input type="text" name="name-family" id="name-family" placeholder="Имя Фамилия" />
+        </p>
+
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="user-email" placeholder="email@exemple.com" />
+        </p>
+
+        <p>
+          Текст письма:
+          <textarea id="message" rows="4" placeholder="В свободной форме"></textarea>
+        </p>
+
+        <button type="submit">Отправить</button>
+
+        <button type="button" title="Закрыть">Закрыть</button>
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
